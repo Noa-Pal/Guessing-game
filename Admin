@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guessing Game</title>
+    <title>Admin Results</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Guessing Game</h1>
-        <p>Please select a round:</p>
-        <ul>
-            <li><a href="Round1/round1.html">Round 1</a></li>
-            <li><a href="Round2/round2.html">Round 2</a></li>
-            <li><a href="Round3/round3.html">Round 3</a></li>
-            <li><a href="Round4/round4.html">Round 4</a></li>
-        </ul>
+        <h1>Admin Results</h1>
         <button class="btn btn-primary" onclick="showResults(1)">Show Results for Round 1</button>
         <button class="btn btn-primary" onclick="showResults(2)">Show Results for Round 2</button>
         <button class="btn btn-primary" onclick="showResults(3)">Show Results for Round 3</button>
