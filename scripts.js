@@ -45,7 +45,6 @@ function showResults(round) {
     }
     distributionHTML += `</ul><h3>Average: ${average.toFixed(2)}</h3>`;
 
-    const resultsDiv = document.createElement('div');
+    const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = distributionHTML;
-    document.body.appendChild(resultsDiv);
 }
