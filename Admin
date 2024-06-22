@@ -13,6 +13,7 @@
         <button class="btn btn-primary" onclick="showResults(2)">Show Results for Round 2</button>
         <button class="btn btn-primary" onclick="showResults(3)">Show Results for Round 3</button>
         <button class="btn btn-primary" onclick="showResults(4)">Show Results for Round 4</button>
+        <div id="results"></div>
     </div>
     <script src="scripts.js"></script>
 </body>
