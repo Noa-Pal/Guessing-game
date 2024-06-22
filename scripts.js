@@ -12,11 +12,8 @@ function submitGuess(round) {
     responses[round - 1].push(guess);
     guessInput.value = "";
 
-    if (round < 4) {
-        window.location.href = `round${round + 1}.html`;
-    } else {
-        alert("All rounds completed. Thank you for your participation!");
-    }
+    alert(`Response for round ${round} submitted. Thank you!`);
+    window.location.href = "../index.html";
 }
 
 function showResults(round) {
