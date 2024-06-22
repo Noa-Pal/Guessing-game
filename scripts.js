@@ -13,7 +13,7 @@ function submitGuess(round) {
     guessInput.value = "";
 
     alert(`Response for round ${round} submitted. Thank you!`);
-    window.location.href = "../index.html";
+    window.location.href = ""index.html"";
 }
 
 function showResults(round) {
