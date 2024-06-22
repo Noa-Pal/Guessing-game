@@ -1,33 +1,23 @@
-{% block title %}
-{% endblock %}
-
-{% block styles %}
-<style>
-  /* Ensure CSS is active or remove if not needed */
-  .btn-primary {
-    background-color: #8a704c;
-    border-color: #8a704c;
-  }
-
-  .btn-primary:hover,
-  .btn-primary:focus,
-  .btn-primary:active {
-    border-color: #7a603c;
-    background-color: #7a603c;
-  }
-</style>
-{% endblock %}
-
-{% block content %}
-<div class="d-flex align-items-center flex-column">
-  <div class="card card-intro shadow p-4 pt-5">
-    <div class="card-body">
-
-      <p>What is your guess for round 2? </p>
-      {% formfield player.guess2 label="" %}
-       <button class="otree-btn-next btn btn-primary"> Next </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex align-items-center flex-column">
+            <div class="card card-intro shadow p-4 pt-5">
+                <div class="card-body">
+                    <p>What is your guess for round 2?</p>
+                    <input type="number" id="guess2" min="0" max="100" required>
+                    <button class="otree-btn-next btn btn-primary" onclick="submitGuess(1)">Next</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-{% endblock %}
+    <script src="scripts.js"></script>
+</body>
+</html>
