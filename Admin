@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Results</h1>
+        <button class="btn btn-primary" onclick="showResults(1)">Show Results for Round 1</button>
+        <button class="btn btn-primary" onclick="showResults(2)">Show Results for Round 2</button>
+        <button class="btn btn-primary" onclick="showResults(3)">Show Results for Round 3</button>
+        <button class="btn btn-primary" onclick="showResults(4)">Show Results for Round 4</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
