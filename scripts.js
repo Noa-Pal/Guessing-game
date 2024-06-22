@@ -13,7 +13,11 @@ function submitGuess(round) {
     guessInput.value = "";
 
     alert(`Response for round ${round} submitted. Thank you!`);
-    window.location.href = ""index.html"";
+}
+
+function submitGuessAndNavigate(round) {
+    submitGuess(round);
+    window.location.href = "index.html";
 }
 
 function showResults(round) {
@@ -48,3 +52,4 @@ function showResults(round) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = distributionHTML;
 }
+
