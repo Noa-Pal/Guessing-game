@@ -1,7 +1,7 @@
 let responses = [[], [], [], []];
 const adminPassword = "your_admin_password";
 
-function submitGuess(round) {
+function submitGuessAndNavigate(round) {
     const guessInput = document.getElementById(`guess${round}`);
     const guess = parseInt(guessInput.value);
     if (isNaN(guess) || guess < 0 || guess > 100) {
@@ -13,10 +13,6 @@ function submitGuess(round) {
     guessInput.value = "";
 
     alert(`Response for round ${round} submitted. Thank you!`);
-}
-
-function submitGuessAndNavigate(round) {
-    submitGuess(round);
     window.location.href = "index.html";
 }
 
@@ -52,4 +48,3 @@ function showResults(round) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = distributionHTML;
 }
-
