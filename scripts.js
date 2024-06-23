@@ -14,7 +14,7 @@ function submitGuessAndNavigate(round) {
 
     alert(`Response for round ${round} submitted. Thank you!`);
     window.location.href = "index.html";
-}
+
 
 function showResults(round) {
     const password = prompt("Enter admin password:");
