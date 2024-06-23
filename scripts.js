@@ -15,6 +15,8 @@ function submitGuessAndNavigate(round) {
 
 
 function showResults(round) {
+    console.log(`Showing results for round: ${round}`); // Debugging
+
     const password = prompt("Enter admin password:");
     if (password !== adminPassword) {
         alert("Incorrect password.");
@@ -44,5 +46,11 @@ function showResults(round) {
     distributionHTML += `</ul><h3>Average: ${average.toFixed(2)}</h3>`;
 
     const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = distributionHTML;
+    if (resultsDiv) {
+        resultsDiv.innerHTML = distributionHTML;
+    } else {
+        console.error('Results div not found'); // Debugging
+    }
 }
+
+
