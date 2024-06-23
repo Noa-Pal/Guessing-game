@@ -1,5 +1,5 @@
 let responses = [[], [], [], []];
-const adminPassword = "your_admin_password";
+const adminPassword = "uuuu";
 
 function submitGuessAndNavigate(round) {
     const guessInput = document.getElementById(`guess${round}`);
@@ -7,15 +7,17 @@ function submitGuessAndNavigate(round) {
     if (isNaN(guess) || guess < 0 || guess > 100) {
         alert("Please enter a valid number between 0 and 100.");
         return;
+    }
 
     responses[round - 1].push(guess);
     guessInput.value = "";
-    }
 
-
+    alert(`Response for round ${round} submitted. Thank you!`);
+    window.location.href = "index.html";
+}
 
 function showResults(round) {
-    console.log(`Showing results for round: ${round}`); // Debugging
+    console.log(`Showing results for round: ${round}`);
 
     const password = prompt("Enter admin password:");
     if (password !== adminPassword) {
@@ -49,8 +51,6 @@ function showResults(round) {
     if (resultsDiv) {
         resultsDiv.innerHTML = distributionHTML;
     } else {
-        console.error('Results div not found'); // Debugging
+        console.error('Results div not found');
     }
 }
-
-
