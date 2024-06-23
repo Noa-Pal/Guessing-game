@@ -7,13 +7,11 @@ function submitGuessAndNavigate(round) {
     if (isNaN(guess) || guess < 0 || guess > 100) {
         alert("Please enter a valid number between 0 and 100.");
         return;
-    }
 
     responses[round - 1].push(guess);
     guessInput.value = "";
+    }
 
-    alert(`Response for round ${round} submitted. Thank you!`);
-    window.location.href = "index.html";
 
 
 function showResults(round) {
